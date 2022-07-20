@@ -62,10 +62,68 @@
             color: white;
             background-color: #0f1b29;
             border-radius: 10px;
-            padding: 7px;
+            padding: 12px 20px;
+            font-weight: bold;
         }
 
+        #shipping {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+            padding: 0px 70px;
+        }
 
+        #shipping>div:nth-child(1) {
+            width: 34%;
+        }
+
+        div>div:nth-child(1)>h1 {
+            font-size: 55px;
+            margin: 5px 0px;
+        }
+
+        div>div:nth-child(1)>p {
+            font-size: 18px;
+        }
+
+        div>div>div {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        #shipping button {
+            font-size: 14px;
+            color: white;
+            font-weight: bold;
+            padding: 13px 20px;
+            margin-right: 25px;
+            background-color: #ff0077;
+            border: none;
+        }
+
+        #shipping button:hover{
+            color:black;
+
+        }
+
+        #demo {
+            color: #ff0077;
+            font-size: 17px;
+        }
+
+        #demo:hover{
+            color:black;
+            font-weight: bold;
+        }
+
+        #shipping>div:nth-child(2) {
+            width: 32%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 15px;
+            height: 350px;
+            margin-top: 15px;
+        }
     </style>
 </head>
 
@@ -94,11 +152,12 @@
             <p>Join 1M+ developers worldwide in developing stable software faster with Codecov.</p>
             <div>
                 <div><button>Get Started</button></div>
-                <div>Schedule a Demo</div>
+                <div id="demo">Schedule a Demo</div>
             </div>
         </div>
         <div>
-            <img src="https://about.codecov.io/wp-content/themes/codecov/assets/templates/home/pull-request-comments.svg"  >
+            <img
+                src="https://about.codecov.io/wp-content/themes/codecov/assets/templates/home/pull-request-comments.svg">
         </div>
     </div>
 </body>
