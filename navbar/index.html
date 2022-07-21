@@ -318,11 +318,35 @@
         }
 
         #contact {
-            border: 1px solid red;
+            width: 89%;
             margin: auto;
-            margin-top: 30px;
-            width: 85%;
+            margin-top: 15px;
+            height: 400px;
+            display: flex;
+        }
 
+        #contact>div {
+            width: 14%;
+            height: 400px;
+            display: flex;
+            margin: auto;
+            border: 1px solid red;
+        }
+
+        #contact>div div {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            width: 100%;
+        }
+
+        #contact h3 {
+            color: white;
+        }
+
+        #contact p {
+            color: #999ea4;
+            font-size: 18px;
         }
     </style>
 </head>
@@ -458,45 +482,58 @@
 
         <div id="contact">
             <div>
-                <h3>PRODUCT</h3>
-                <p>Features</p>
-                <p>Integrations</p>
-                <p>Documentation</p>
-                <p>API</p>
-                <p>Status</p>
+                <div>
+                    <h3>PRODUCT</h3>
+                    <p>Features</p>
+                    <p>Integrations</p>
+                    <p>Documentation</p>
+                    <p>API</p>
+                    <p>Status</p>
+                </div>
 
             </div>
             <div>
-                <h3>SOLUTIONS</h3>
-                <p>Open Source</p>
-                <p>Enterprise</p>
-                <p>Startups</p>
-                <p>Education</p>
+                <div>
+                    <h3>SOLUTIONS</h3>
+                    <p>Open Source</p>
+                    <p>Enterprise</p>
+                    <p>Startups</p>
+                    <p>Education</p>
+                </div>
+
             </div>
             <div>
-                <h3>CUSTOMERS</h3>
-                <p>Customers</p>
-                <p>Case Studies</p>
-                <p>Community</p>
+                <div>
+                    <h3>CUSTOMERS</h3>
+                    <p>Customers</p>
+                    <p>Case Studies</p>
+                    <p>Community</p>
+                </div>
             </div>
             <div>
-                <h3>RESOURCES</h3>
-                <p>Webinars</p>
-                <p>Blog</p>
-                <p>Documentation</p>
+                <div>
+                    <h3>RESOURCES</h3>
+                    <p>Webinars</p>
+                    <p>Blog</p>
+                    <p>Documentation</p>
+                </div>
             </div>
             <div>
-                <h3>COMPANY</h3>
-                <p>Team</p>
-                <p>Press</p>
-                <p>Careers We're Hiring</p>
-                <p>Write for us</p>
+                <div>
+                    <h3>COMPANY</h3>
+                    <p>Team</p>
+                    <p>Press</p>
+                    <p>Careers We're Hiring</p>
+                    <p>Write for us</p>
+                </div>
             </div>
             <div>
-                <h3>CONTACT US</h3>
-                <p>Contact</p>
-                <p>Demo</p>
-                <p>Support</p>
+                <div>
+                    <h3>CONTACT US</h3>
+                    <p>Contact</p>
+                    <p>Demo</p>
+                    <p>Support</p>
+                </div>
             </div>
         </div>
     </div>
