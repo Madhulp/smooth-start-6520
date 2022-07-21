@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-         * {
+        * {
             font: poppins
         }
 
@@ -61,12 +62,95 @@
             font-weight: bold;
         }
 
-        #product>a{
+        #product>a {
             color: #4f5864;
             text-decoration: none;
         }
+
+        #feature {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 110px;
+            font-size: 47px;
+            color: #0f1b29
+        }
+
+        #features {
+            width: 70%;
+            height: 300px;
+            margin: auto;
+            margin-top: 110px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #features>div{
+            width:55%;
+            height:300px;
+        }
+
+        #features img{
+            width:100%;
+        }
+
+        #features>div>p:nth-child(1){
+            color:#f01f7a;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        #features>div>p:nth-child(4){
+            color:#f01f7a;
+            font-weight: bold;
+        }
+
+        #features>div>p:nth-child(3){
+            color:#212529;
+            font-size: 20px;
+            width: 75%;
+        }
+
+        #sourcecode{
+            width:70%;
+            height:350px;
+            display: flex;
+            margin: auto;
+            margin-top: 110px;
+            justify-content: space-around;
+
+        }
+
+        #sourcecode img{
+            width:100%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 20px;
+        }
+
+        #sourcecode div{
+            width:45%;
+            display: flex;
+
+        }
+
+        #sourcecode>div:nth-child(2)>div{
+            display: flex;
+            border:1px solid red;
+            width: 100%;
+            display: flex;
+            height:350px;
+        }
+
+        #sourcecode>div:nth-child(2)>div>h1{
+            width:100%;
+            border:1px solid red;
+        }
+
+
+
+       
     </style>
 </head>
+
 <body>
     <div id="head">Introducing Codecov’s newest feature: Impact Analysis – now in Open Beta</div>
     <div id="navbar">
@@ -88,5 +172,32 @@
             <button>Get Demo</button>
         </div>
     </div>
+    <h1 id="feature">Features</h1>
+    <div id="features">
+        <div>
+            <p>PUBLIC BETA</p>
+            <h1>Impact Analysis</h1>
+            <p>Impact Analysis takes runtime information from an application’s production. environment and provides this information contextually in the Codecov dashboard and in the Codecov pull request comment. Now, in any pull …</p>
+            <p>Read More </p>
+        </div>
+        <div>
+            <img src="https://about.codecov.io/wp-content/uploads/2022/06/0622_ProjectInsights.jpg"  />
+        </div>
+    </div>
+    <div id="sourcecode">
+        <div>
+            <img src="https://about.codecov.io/wp-content/uploads/2020/10/Source-Code-Coverage-1.png"  />
+        </div>
+        <div>
+            <div>
+                <h1>Source Code Coverage</h1>
+                <p>Codecov makes it easy to see absolute coverage and coverage changes overlayed with your source code, making it even easier to identify needed test areas.</p>
+                <p>Learn More  </p>
+            </div>
+            
+        </div>
+    </div>
+
 </body>
+
 </html>
