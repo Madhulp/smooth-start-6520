@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codecov Website</title>
+    <style>
+        * {
+            font: poppins;
+        }
+
+        #head {
+            background-color: #0f1b29;
+            color: white;
+            text-align: center;
+            padding: 14px;
+            font-size: 18px;
+        }
+
+        #navbar {
+            display: flex;
+            margin: auto;
+            width: 100%;
+            margin-top: 20px;
+            justify-content: space-around;
+            align-items: center;
+            color: #4f5864;
+            font-weight: bold;
+        }
+
+        #navbar>div>img {
+            width: 50%;
+            margin-left: 70px;
+        }
+
+        #navbar>div:nth-child(2) {
+            display: flex;
+            font-size: 18px;
+            width: 90%;
+            justify-content: space-around;
+            margin-left: -70px;
+        }
+
+        #navbar>div:nth-child(3) {
+            display: flex;
+            font-size: 18px;
+            justify-content: space-around;
+            width: 30%;
+            margin-right: 120px;
+            align-items: center;
+            margin-left: 70px;
+        }
+
+        button {
+            font-size: 15px;
+            color: white;
+            background-color: #0f1b29;
+            border-radius: 10px;
+            padding: 12px 20px;
+            font-weight: bold;
+        }
+
+        #shipping {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+            padding: 0px 70px;
+        }
+
+        #shipping>div:nth-child(1) {
+            width: 34%;
+        }
+
+        div>div:nth-child(1)>h1 {
+            font-size: 55px;
+            margin: 5px 0px;
+        }
+
+        div>div:nth-child(1)>p {
+            font-size: 18px;
+        }
+
+        div>div>div {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        #shipping button {
+            font-size: 14px;
+            color: white;
+            font-weight: bold;
+            padding: 13px 20px;
+            margin-right: 25px;
+            background-color: #ff0077;
+            border: none;
+        }
+
+        #shipping button:hover {
+            color: black;
+
+        }
+
+        #demo {
+            color: #ff0077;
+            font-size: 17px;
+        }
+
+        #demo:hover {
+            color: black;
+            font-weight: bold;
+        }
+
+        #shipping>div:nth-child(2) {
+            width: 32%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 15px;
+            height: 350px;
+            margin-top: 15px;
+        }
+
+        #organizations {
+            width: 50%;
+            margin: auto;
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #lya {
+            width: 5%;
+        }
+
+        #lya>img {
+            width: 100%;
+        }
+
+        #packard {
+            width: 10%;
+        }
+
+        #packard>img {
+            width: 100%;
+        }
+
+        #robinhood {
+            width: 10%;
+        }
+
+        #robinhood>img {
+            width: 100%;
+        }
+
+        #hitachi {
+            width: 10%;
+        }
+
+        #hitachi>img {
+            width: 100%;
+        }
+
+        #python {
+            width: 10%;
+        }
+
+        #python>img {
+            width: 100%;
+        }
+
+        #grab {
+            width: 7%;
+        }
+
+        #garb>img {
+            width: 100%;
+        }
+
+        #development>div>h2 {
+            width: 50%;
+            margin: auto;
+            margin-top: 130px;
+            font-size: 33px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #para {
+            width: 30%;
+            margin: auto;
+            margin-top: 70px;
+            text-align: center;
+            color: #6c757d;
+            font-weight: bold;
+            font-size: 13px;
+            margin-bottom: -40px;
+        }
+
+        #development>div:nth-child(2) {
+            display: flex;
+            justify-content: space-around;
+            margin: auto;
+            margin-top: 35px;
+            width: 80%;
+        }
+
+        #development img {
+            width: 100%;
+        }
+
+        #development>div:nth-child(2)>div {
+            width: 40%;
+        }
+
+        #paragraph {
+            flex-direction: column;
+            display: flex;
+            text-align: justify;
+        }
+
+        #paragraph p {
+            font-size: 18px;
+            color: #212529;
+
+        }
+
+        #help {
+            text-align: center;
+            margin-top: 130px;
+        }
+
+        #helps {
+            margin: auto;
+            height: 300px;
+            width: 75%;
+        }
+
+        #ready {
+            width: 55%;
+            margin: auto;
+            height: 260px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding-top: 25px;
+            border-radius: 20px;
+            margin-top: 70px;
+        }
+
+        #ready>h1 {
+            text-align: center;
+        }
+
+        #ready>p {
+            width: 55%;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+            margin-top: -10px;
+        }
+
+        #ready>div {
+            margin: auto;
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #ready>div div {
+            padding: 4px 70px;
+            border-radius: 15px;
+            border: 1px solid #b4b9c0;
+            display: flex;
+        }
+
+        #resources>h1 {
+            text-align: center;
+        }
+
+        #resources>p {
+            text-align: center;
+        }
+
+        #resource {
+            width: 33%;
+            font-size: 18px;
+            color: #212529;
+            margin: auto;
+            margin-top: -5px;
+        }
+
+        #resource+p {
+            font-size: 18px;
+            color: #ff0077
+        }
+
+        #resources div {
+            border: 1px solid red;
+            display: flex;
+            width: 85%;
+            height: 400px;
+            margin: auto;
+        }
+
+        #resources div img {
+            width: 100%;
+
+        }
+
+        #footer {
+            height: 540px;
+            margin-top: 90px;
+            background-color: #0f1b29;
+        }
+
+        #logos {
+            padding-left: 170px;
+            padding-top: 60px;
+        }
+
+        #contact {
+            width: 89%;
+            margin: auto;
+            margin-top: 15px;
+            height: 400px;
+            display: flex;
+        }
+
+        #contact>div {
+            width: 14%;
+            height: 400px;
+            display: flex;
+            margin: auto;
+        }
+
+        #contact>div div {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            width: 100%;
+        }
+
+        #contact h3 {
+            color: white;
+        }
+
+        #contact p {
+            color: #999ea4;
+            font-size: 18px;
+        }
+
+        #solutions {
+            margin-top: -39px;
+        }
+
+        #customers {
+            margin-top: -95px;
+        }
+
+        #resources {
+            margin-top: -96px;
+        }
+
+        #company {
+            margin-top: -45px;
+        }
+
+        #contactus {
+            margin-top: -100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="head">Introducing Codecov’s newest feature: Impact Analysis – now in Open Beta</div>
+    <div id="navbar">
+        <div>
+            <img src="https://about.codecov.io/wp-content/themes/codecov/assets/brand/logos/codecov.svg" />
+        </div>
+        <div>
+            <div>Product</div>
+            <div>Documentation</div>
+            <div>Customers</div>
+            <div>Resources</div>
+            <div>Pricing</div>
+            <div>Contact</div>
+        </div>
+        <div>
+            <div>Login</div>
+            <button>Get Demo</button>
+        </div>
+    </div>
+    <div id="shipping">
+        <div>
+            <h1>Shipping reliable code doesn’t have to slow you down.</h1>
+            <p>Join 1M+ developers worldwide in developing stable software faster with Codecov.</p>
+            <div>
+                <div><button>Get Started</button></div>
+                <div id="demo">Schedule a Demo</div>
+            </div>
+        </div>
+        <div>
+            <img
+                src="https://about.codecov.io/wp-content/themes/codecov/assets/templates/home/pull-request-comments.svg">
+        </div>
+    </div>
+    <p id="para">29,000+ ORGANIZATIONS ARE ALREADY USING CODECOV</p>
+    <div id="organizations">
+        <div id="lya"><img src="https://about.codecov.io/wp-content/uploads/2020/10/lyft.svg" /></div>
+        <div id="packard"><img
+                src="https://about.codecov.io/wp-content/uploads/2021/06/Hewlett_Packard_Enterprise_logo.svg" /></div>
+        <div id="robinhood"><img src="https://about.codecov.io/wp-content/uploads/2022/05/Logo-Robinhood.png" /></div>
+        <div id="hitachi"><img src="https://about.codecov.io/wp-content/uploads/2021/06/hitachi.svg" /></div>
+        <div id="python"><img src="https://about.codecov.io/wp-content/uploads/2020/08/python-logo.svg" /></div>
+        <div id="grab"><img src="https://about.codecov.io/wp-content/uploads/2020/08/grab.svg" /></div>
+    </div>
+    <div id="development">
+        <div>
+            <h2>Development cycles are spinning faster than ever...</h2>
+        </div>
+        <div>
+            <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/templates/home/devops.svg" /></div>
+            <div id="paragraph">
+                <p>With everything from doorbells to rockets running on code, it's more important than ever to ensure
+                    quality code is being delivered with every release.</p>
+
+                <p>Code coverage is one of the most important metrics companies rely on to ship healthier code, faster,
+                    and with less risk.</p>
+
+                <p>Codecov gives companies actionable coverage insights when and where they need them to ensure they are
+                    shipping quality code.</p>
+            </div>
+        </div>
+    </div>
+    <h1 id="help">How Codecov helps...</h1>
+    <div id="helps">
+        <div>
+
+        </div>
+        <div></div>
+    </div>
+    <div id="resources">
+        <h1>Resources</h1>
+        <p id="resource">Want to learn more about code coverage? View our library of resources to start building a
+            culture of coverage at your company.</p>
+        <p>View Resources </p>
+        <div id="viewresources">
+            <div>
+                <img
+                    src="https://about.codecov.io/wp-content/uploads/2021/02/2020-state-of-open-source-code-coverage.jpg" />
+                <p>PAGE</p>
+                <h3>What should my code coverage goal be?</h3>
+                <p>Learn More </p>
+            </div>
+            <div>
+                <img
+                    src="https://about.codecov.io/wp-content/uploads/2021/02/2020-state-of-open-source-code-coverage.jpg" />
+                <p>INFOGRAPHIC</p>
+                <h3>2020 State of Open Source Code Coverage</h3>
+                <p>View Infographic </p>
+            </div>
+            <div>
+                <img
+                    src="https://about.codecov.io/wp-content/uploads/2021/02/2020-state-of-open-source-code-coverage.jpg" />
+                <p>BLOG POST</p>
+                <h3>8 Factors Influencing Your Approach to Code Coverage</h3>
+                <p>Read Blog Post </p>
+            </div>
+        </div>
+    </div>
+    <div id="ready">
+        <h1>Ready to get covered?</h1>
+        <p>Join over a million developers in shipping healthier code today. Sign up with your code host below.</p>
+        <div>
+            <div>
+                <!-- <img src="https://about.codecov.io/wp-content/themes/codecov/assets/logos/ci/github/github-icon.svg" /> -->
+                <h3>GitHub</h3>
+            </div>
+            <div>
+                <!-- <img src="https://about.codecov.io/wp-content/themes/codecov/assets/logos/ci/gitlab/gitlab-icon.svg" /> -->
+                <h3>GitLab</h3>
+            </div>
+            <div>
+                <!-- <img src="https://about.codecov.io/wp-content/themes/codecov/assets/logos/ci/bitbucket/bitbucket-icon.svg" /> -->
+                <h3>Bitbucket</h3>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="logos">
+            <img
+                src="https://about.codecov.io/wp-content/themes/codecov/assets/brand/icons/codecov/codecov-circle.svg" />
+            <img src="" />
+            <img src="" />
+            <img src="" />
+            <img src="" />
+            <img src="" />
+            <img src="" />
+            <img src="" />
+
+        </div>
+
+        <div id="contact">
+            <div>
+                <div>
+                    <h3>PRODUCT</h3>
+                    <p>Features</p>
+                    <p>Integrations</p>
+                    <p>Documentation</p>
+                    <p>API</p>
+                    <p>Status</p>
+                </div>
+
+            </div>
+            <div>
+                <div>
+                    <h3 id="solutions">SOLUTIONS</h3>
+                    <p>Open Source</p>
+                    <p>Enterprise</p>
+                    <p>Startups</p>
+                    <p>Education</p>
+                </div>
+
+            </div>
+            <div>
+                <div>
+                    <h3 id="customers">CUSTOMERS</h3>
+                    <p>Customers</p>
+                    <p>Case Studies</p>
+                    <p>Community</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h3 id="resources">RESOURCES</h3>
+                    <p>Webinars</p>
+                    <p>Blog</p>
+                    <p>Documentation</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h3 id="company">COMPANY</h3>
+                    <p>Team</p>
+                    <p>Press</p>
+                    <p>Careers We're Hiring</p>
+                    <p>Write for us</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h3 id="contactus">CONTACT US</h3>
+                    <p>Contact</p>
+                    <p>Demo</p>
+                    <p>Support</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
