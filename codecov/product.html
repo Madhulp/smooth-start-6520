@@ -422,7 +422,7 @@
             margin-top: 90px;
         }
 
-        
+
         #carryforwardflags {
             width: 70%;
             height: 500px;
@@ -534,7 +534,7 @@
             font-weight: bold;
         }
 
-        
+
         #ready {
             width: 55%;
             margin: auto;
@@ -568,6 +568,33 @@
             border-radius: 15px;
             border: 1px solid #b4b9c0;
             display: flex;
+        }
+
+        #terms {
+            width: 100%;
+            height: 50px;
+            margin-top: 80px;
+        }
+
+        #terms div {
+            border: 0px lightgoldenrodyellow;
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+
+        #terms>div:nth-child(1) {
+            background-color: #0f1b29;
+        }
+
+        #terms>div:nth-child(2) {
+            background-color: #0c1622;
+        }
+
+        #terms>div:nth-child(2)>p {
+            color: white;
+            display: flex;
+            margin: auto;
         }
     </style>
 </head>
@@ -701,14 +728,16 @@
         </div>
         <div>
             <h1>Carryforward Flags</h1>
-            <p>Don’t run your entire test suite on every commit? Use Carryforward Flags to get consistent coverage metrics, even when you don’t upload all coverage reports.</p>
+            <p>Don’t run your entire test suite on every commit? Use Carryforward Flags to get consistent coverage
+                metrics, even when you don’t upload all coverage reports.</p>
             <p>Learn More </p>
         </div>
     </div>
     <div id="githubchecks">
         <div>
             <h1>GitHub Checks</h1>
-            <p>Want to see uncovered lines directly on a GitHub pull request? Our GitHub Checks feature shows you line-by-line coverage so you can stay in your workflow.</p>
+            <p>Want to see uncovered lines directly on a GitHub pull request? Our GitHub Checks feature shows you
+                line-by-line coverage so you can stay in your workflow.</p>
             <p>Learn More </p>
         </div>
         <div>
@@ -738,6 +767,16 @@
             <div>
                 <h3>Bitbucket</h3>
             </div>
+        </div>
+    </div>
+    <div id="terms">
+        <div></div>
+        <div>
+            <p>Terms & Conditions</p>
+            <p>Privacy</p>
+            <p>Security</p>
+            <p>EULA</p>
+            <p> GDPR</p>
         </div>
     </div>
 </body>
