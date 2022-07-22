@@ -242,12 +242,65 @@
         #help {
             text-align: center;
             margin-top: 130px;
+            margin-bottom: 50px;
         }
 
         #helps {
             margin: auto;
-            height: 300px;
-            width: 75%;
+            height: 270px;
+            width: 80%;
+            display: flex;
+            margin: auto;
+            margin-bottom: 150px;
+        }
+
+        #helps>div:nth-child(1) {
+            width: 35%;
+        }
+
+        #helps>div:nth-child(1) h2 {
+            width: 100%;
+            height: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 30px;
+        }
+
+        #helps>div:nth-child(1) h2:nth-child(1){
+            background-color: #e6d6f3;;
+        }
+
+        #helps>div:nth-child(1) h2:hover{
+            background-color: #e6d6f3;
+        }
+
+        #helps>div:nth-child(2) {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 15px;
+            width: 60%;
+            margin: auto;
+            height: 260px;
+            margin-top: 1px;
+        }
+
+        #helps>div:nth-child(2)>p {
+            font-size: 19px;
+            width: 90%;
+            margin: auto;
+            margin-top: 36px;
+        }
+
+        #helps>div:nth-child(2)>p>span {
+            color: #ff0077
+        }
+
+        #helps>div:nth-child(2) ul {
+            color: #ff0077;
+            line-height: 25px;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-left: 35px;
         }
 
         #ready {
@@ -375,9 +428,21 @@
     <h1 id="help">How Codecov helps...</h1>
     <div id="helps">
         <div>
-
+            <h2>Flexible/ Unified Reporting</h2>
+            <h2>Seamless Coverage Insights</h2>
+            <h2>Robust Coverage Controls</h2>
         </div>
-        <div></div>
+        <div>
+            <p>As long as your code has tests and your coverage tool can output coverage results in a <span>compatible
+                    format,</span>
+                you can use Codecov.</p>
+            <ul>
+                <li>Source Code Coverage</li>
+                <li>20+ Languages and CI/CD Agnostic</li>
+                <li>Report Merging</li>
+                <li>Coverage Isolation</li>
+            </ul>
+        </div>
     </div>
     <div id="resources">
         <h1>Resources</h1>
