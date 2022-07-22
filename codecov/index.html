@@ -358,7 +358,62 @@
         #resource+p {
             font-size: 18px;
             color: #ff0077;
+            margin-bottom: 60px;
         }
+
+        #resources>div {
+            width: 94%;
+            height: 360px;
+            margin: auto;
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 90px;
+        }
+
+        #resources>div>div {
+            width: 28%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #resources>div>div>div>img {
+            width: 100%;
+        }
+
+        .resou>div:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            width: 100%;
+        }
+
+        .reso {
+            text-align: left;
+            width: 90%;
+            color: #ff0077;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .res {
+            width: 90%;
+            margin-top: 5px;
+        }
+
+        .resou{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        }
+
+        #re{
+            color: #ff0077;
+            font-size: 14px;
+            font-weight: bold;
+
+        }
+
+       
     </style>
 </head>
 
@@ -450,6 +505,33 @@
         <p id="resource">Want to learn more about code coverage? View our library of resources to start building a
             culture of coverage at your company.</p>
         <p>View Resources </p>
+        <div>
+            <div class="resou">
+                <div> <img src="https://about.codecov.io/wp-content/uploads/2021/02/8-factors-Influencing.png" /></div>
+                <div>
+                    <p class="reso">PAGE</p>
+                    <h3 class="res">What should my code coverage goal be?</h3>
+                    <p class="res" id="re">Learn More </p>
+                </div>
+            </div>
+            <div class="resou">
+                <div> <img src="https://about.codecov.io/wp-content/uploads/2021/02/8-factors-Influencing.png" /></div>
+                <div>
+                    <p class="reso">INFOGRAPHIC</p>
+                    <h3 class="res">2020 State of Open Source Code Coverage</h3>
+                    <p class="res" id="re">View Infographic  </p>
+                </div>
+            </div>
+            <div class="resou">
+                <div> <img src="https://about.codecov.io/wp-content/uploads/2021/02/8-factors-Influencing.png" /></div>
+                <div>
+                    <p class="reso">BLOG POST</p>
+                    <h3 class="res">8 Factors Influencing Your Approach to Code Coverage</h3>
+                    <p class="res" id="re">Read Blog Post </p>
+                </div>
+            </div>
+
+        </div>
     </div>
     <div id="ready">
         <h1>Ready to get covered?</h1>
